@@ -1,0 +1,83 @@
+# Web Application Penetration Testing
+
+These notes summarise core web application penetration testing concepts
+and methodology applied during hands-on labs and CTF exercises.
+The concepts below were reinforced through practical exploitation
+of the VulnNet: dotpy CTF machine.
+
+---
+
+## Web Application Pentesting Methodology
+
+### 1. Reconnaissance & Enumeration
+
+- Identify exposed services, frameworks, and technologies
+- Locate user-controlled input points (parameters, forms, headers)
+- Observe application behavior when inputs are modified
+
+In VulnNet: dotpy, service enumeration identified a Flask-based web
+application, which guided further testing toward Python-specific issues.
+
+---
+
+### 2. Vulnerability Identification
+
+- Analyze how user input is processed server-side
+- Differentiate between static reflection and dynamic execution
+- Look for inconsistent or unexpected application responses
+
+In VulnNet: dotpy, modifying user input resulted in dynamic server
+responses, indicating server-side processing rather than static rendering.
+
+---
+
+### 3. Exploitation Principles
+
+- Start with low-impact tests to confirm vulnerability class
+- Escalate exploitation only after confirmation
+- Avoid blind payload dumping; focus on understanding execution flow
+
+The VulnNet: dotpy exploitation demonstrated how confirming server-side
+template evaluation is critical before attempting full command execution.
+
+---
+
+### 4. Server-Side Template Injection (SSTI)
+
+- Occurs when user input is rendered directly within a server-side template
+- Common in template engines such as Jinja2 (Flask), Twig, or Velocity
+- Can lead to remote code execution if template context is unrestricted
+
+Key indicators observed in VulnNet: dotpy:
+
+- User input evaluated dynamically
+- Template expressions executed server-side
+- Access to underlying language objects was possible
+
+---
+
+### 5. Impact Assessment
+
+- Remote code execution
+- Data exposure
+- Privilege escalation due to weak system hardening
+
+VulnNet: dotpy highlighted how a single web vulnerability can result in
+full system compromise when combined with misconfigured privileges.
+
+---
+
+### 6. Mitigation & Defensive Considerations
+
+- Never render unsanitized user input in templates
+- Apply strict input validation and context-aware escaping
+- Restrict template engine capabilities
+- Enforce least privilege for application users and system permissions
+
+---
+
+## Key Takeaways
+
+- Understanding application behavior is more important than payload memorization
+- Web vulnerabilities often chain into system-level compromise
+- Secure coding and proper privilege separation are equally important
