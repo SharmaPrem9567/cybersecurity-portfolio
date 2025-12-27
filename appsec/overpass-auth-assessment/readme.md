@@ -1,16 +1,22 @@
 # Overpass – Application Security Assessment (Authentication Bypass)
 
-This assessment analyzes a broken authentication design in a simulated lab
-environment. The focus is on trust boundaries, server-side validation failures,
-and the business impact of authentication bypass.
+This assessment analyzes a broken authentication design in a controlled lab
+environment. The goal was to evaluate how trust boundaries were handled and
+whether authentication decisions were enforced server-side.
 
-**Report files:**
-- report.md (full writeup)
-- report.pdf (portfolio copy)
+📄 **Files**
+- report.md — full detailed assessment
+- report.pdf — formatted portfolio version
+- screenshots/ — sanitized proof screenshots
 
-Skills demonstrated:
+🛡️ **Skills demonstrated**
 - Threat modeling
-- Root-cause analysis
+- Authentication & access control testing
 - Minimal-impact exploitation
-- Business-risk translation
+- Business risk explanation
 - Remediation aligned to OWASP ASVS
+
+🎯 **Vulnerability class**
+Authentication Bypass / Broken Authentication
+
+> Focus: *why* the vulnerability existed (design failure), not just how to exploit it.
