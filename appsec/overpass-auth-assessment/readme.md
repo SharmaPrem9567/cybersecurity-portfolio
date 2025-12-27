@@ -19,4 +19,3 @@ whether authentication decisions were enforced server-side.
 🎯 **Vulnerability class**
 Authentication Bypass / Broken Authentication
 
-> Focus: *why* the vulnerability existed (design failure), not just how to exploit it.
