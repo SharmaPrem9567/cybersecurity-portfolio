@@ -1,46 +1,30 @@
-# Cybersecurity Portfolio
+# Penetration Testing Portfolio (Web + Infrastructure)
 
-This repository contains my hands-on practice in offensive web security, based on real labs, CTF machines, and intentionally vulnerable applications.
+Hi, I’m **PREM** — an aspiring **Web Application / API Security Pentester** building a practical penetration testing portfolio focused on **real-world attack paths**, **clear reporting**, and **industry-style documentation**.
 
-The focus is on understanding vulnerabilities through manual testing, exploiting them in a controlled environment, and documenting findings clearly and honestly.
+This repository contains multiple pentest-style reports (CTF-based but written in a **professional / industry format**) showing my skills in:
 
-## Current Scope
+- Reconnaissance & Enumeration
+- Web exploitation
+- Authentication/Authorization testing
+- Misconfiguration discovery
+- Privilege escalation (Linux)
+- Evidence-driven reporting (screenshots + commands + impact)
+- Remediation & security recommendations
 
-- SQL Injection (manual exploitation and basic automation)
-- Cross-Site Scripting (Reflected, Stored, DOM-based)
-- One CTF machine with a complete attack chain writeup
+---
 
-The goal at this stage is solid fundamentals and clean technical reporting, not tool quantity.
+## 📌 Projects / Reports
 
-## Repository Structure
+| # | Target | Category | Key Skills Demonstrated | Report |
+|---|--------|----------|-------------------------|--------|
+| 1 | **Overpass** | Web Application Pentest | Enumeration, Access Control, Exploitation chain, Reporting | [`Overpass/report`](./Overpass/report/) |
+| 2 | **VulnNet:dotpy** | Linux Host / Web | Service discovery, Web enum, exploitation, privilege escalation | [`VulnNet-dotpy/report`](./VulnNet-dotpy/report/) |
+| 3 | **RootMe** | Web + Linux PrivEsc | Web exploitation, reverse shell, privilege escalation, root access | [`RootMe/report`](./RootMe/report/) |
 
-### writeups/
+---
 
-Detailed walkthroughs documenting:
+## 📂 Repository Structure
 
-- Vulnerability identification
-- Exploitation steps
-- Impact analysis
-- Basic mitigation guidance
+Each target contains a consistent structure:
 
-This is the primary section of the repository.
-
-### screenshots/
-
-Supporting evidence referenced in writeups, including:
-
-- Enumeration output
-- Exploitation success
-- CTF flags
-
-Screenshots are included only where they add technical clarity.
-
-### tools/
-
-This directory is reserved for custom scripts and small automation tools.
-No tools have been added yet.
-
-### notes/
-
-Personal reference notes created during learning.
-These are not intended as polished guides.
