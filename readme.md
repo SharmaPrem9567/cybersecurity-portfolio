@@ -1,32 +1,73 @@
-# Penetration Testing Portfolio (Web + Infrastructure)
+# Penetration Testing Reports (Portfolio)
 
-Hi, I’m **PREM KR SHARMA** — an aspiring **Web Application / API Security Pentester** building a practical penetration testing portfolio focused on **real-world attack paths**, **clear reporting**, and **industry-style documentation**.
+Hi, I’m **PREM KR SHARMA** 👋  
+This repository contains my **industry-style penetration testing reports** created during hands-on labs and practical pentesting practice.
 
-This repository contains multiple pentest-style reports (CTF-based but written in a **professional / industry format**) showing my skills in:
-
-- Reconnaissance & Enumeration
-- Web exploitation
-- Authentication/Authorization testing
-- Misconfiguration discovery
-- Privilege escalation (Linux)
-- Evidence-driven reporting (screenshots + commands + impact)
-- Remediation & security recommendations
+Each report is written in a professional format (executive summary, methodology, findings, exploitation, remediation, and evidence/screenshots).
 
 ---
 
-## 📌 Projects / Reports
+## 👨‍💻 About Me
 
-| # | Target | Category | Key Skills Demonstrated | Report |
-|---|--------|----------|-------------------------|--------|
-| 1 | **Overpass** | Web Application Pentest | Enumeration, Access Control, Exploitation chain, Reporting | [`Overpass/report`](./Overpass/report/) |
-| 2 | **VulnNet:dotpy** | Linux Host / Web | Service discovery, Web enum, exploitation, privilege escalation | [`VulnNet-dotpy/report`](./VulnNet-dotpy/report/) |
-| 3 | **RootMe** | Web + Linux PrivEsc | Web exploitation, reverse shell, privilege escalation, root access | [`RootMe/report`](./RootMe/report/) |
+- **Name:** PREM KR SHARMA  
+- **LinkedIn:** https://www.linkedin.com/in/prem-kr-sharma-928630175  
+- **GitHub:** https://github.com/SharmaPrem9567  
 
 ---
 
 ## 📂 Repository Structure
 
-Each target contains a consistent structure:
+This repo is divided into separate folders for each target/application:
 
+### 1) `Overpass-Pentest-Report`
+✅ Web Application Penetration Testing Report  
+Includes:
+- Recon & enumeration
+- Exploitation steps
+- Evidence screenshots
+- Risk findings + remediation
 
+---
 
+### 2) `Rootme-Pentest-Report`
+✅ Web + System exploitation style report  
+Includes:
+- Nmap scanning
+- Web enumeration
+- Reverse shell access
+- Privilege escalation
+- Root proof
+
+---
+
+### 3) `VulnNet-dotpy-Pentest-Report`
+✅ Pentest report focusing on discovery + exploitation  
+Includes:
+- Port scanning
+- Endpoint enumeration
+- Exploitation
+- User + root proof evidence
+
+---
+
+## 🧾 Report Format (Standard)
+
+Each pentest folder usually contains:
+
+- `*.md` → Markdown version of the report  
+- `*.pdf` → PDF version of the report  
+- `Evidence/` → Screenshots proving each phase (scan, enum, exploit, privesc)  
+- `Output/` → Tool outputs and logs (nmap, gobuster, ffuf, etc.)
+
+---
+
+## ⚠️ Disclaimer
+
+These reports are created for **educational and portfolio purposes only** using legal training platforms such as TryHackMe / labs.  
+No real-world systems were harmed or tested without authorization.
+
+---
+
+## ⭐ Feedback / Suggestions
+
+If you have suggestions to improve my reports or methodology, feel free to connect with me on LinkedIn.
