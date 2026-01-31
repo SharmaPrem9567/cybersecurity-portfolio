@@ -10,7 +10,7 @@ Each report follows a professional structure including: **Executive Summary, Sco
 ## 👨‍💻 About Me
 
 - **Name:** PREM KR SHARMA  
-- **LinkedIn:** https://www.linkedin.com/in/prem-kr-sharma-928630175  
+- **LinkedIn:** www.linkedin.com/in/prem-sharma-pentester  
 - **GitHub:** https://github.com/SharmaPrem9567  
 
 ---
@@ -90,3 +90,4 @@ No real-world systems were tested without authorization.
 ## ⭐ Feedback / Suggestions
 
 If you have suggestions to improve my reports or methodology, feel free to connect with me on LinkedIn.
+
